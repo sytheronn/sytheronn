@@ -95,12 +95,6 @@
     <!-- LEFT PANEL (Dot Matrix Halftone Art) -->
     <g>
         <rect x="40" y="80" width="410" height="530" rx="16" fill="url(#glass)" stroke="#d0d7de" stroke-width="1.5" />
-        
-        <!-- Moving Scanline -->
-        <rect x="40" y="80" width="410" height="2" fill="rgba(0,0,0,0.05)" clip-path="url(#left-panel-clip)">
-            <animate attributeName="y" values="80; 610; 80" dur="5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0; 1; 0" dur="5s" repeatCount="indefinite" />
-        </rect>
 
         <!-- Animated Dot Halftone Portrait -->
         <g fill="#24292f" clip-path="url(#left-panel-clip)">
@@ -6533,42 +6527,131 @@
             </g>
         </g>
 
-        <!-- Sequential Reveal Info -->
+        <!-- Sequential Terminal Info with Flowing Dots -->
         <g>
             <g opacity="0">
-                <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.5s" fill="freeze"/>
-                <text x="520" y="265" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">LOCATION:</text>
-                <text x="660" y="265" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Istanbul, Turkey</text>
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.5s" fill="freeze"/>
+                <text x="520" y="245" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">SUBJECT</text>
+                <line x1="600" y1="241" x2="810" y2="241" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="245" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Sytheronn</text>
             </g>
+
             <g opacity="0">
-                <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.7s" fill="freeze"/>
-                <text x="520" y="305" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">EDUCATION:</text>
-                <text x="660" y="305" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Self-Taught Developer</text>
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.6s" fill="freeze"/>
+                <text x="520" y="265" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">ROLE</text>
+                <line x1="575" y1="261" x2="810" y2="261" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="265" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Full Stack Web Developer</text>
             </g>
+
             <g opacity="0">
-                <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.9s" fill="freeze"/>
-                <text x="520" y="345" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CURRENT FOCUS:</text>
-                <text x="660" y="345" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Full Stack Web, UI/UX &amp; Game Servers</text>
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.7s" fill="freeze"/>
+                <text x="520" y="285" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">ORIGIN</text>
+                <line x1="590" y1="281" x2="810" y2="281" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="285" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Istanbul, Turkey</text>
             </g>
+
             <g opacity="0">
-                <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.1s" fill="freeze"/>
-                <text x="520" y="385" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">FIVEM ASSETS:</text>
-                <text x="660" y="385" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">obx.tebex.io</text>
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.8s" fill="freeze"/>
+                <text x="520" y="305" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">EDUCATION</text>
+                <line x1="615" y1="301" x2="810" y2="301" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="305" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Self-Taught Developer</text>
             </g>
+
             <g opacity="0">
-                <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.3s" fill="freeze"/>
-                <text x="520" y="425" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">EMAIL:</text>
-                <text x="660" y="425" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">sytheron1@gmail.com</text>
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.9s" fill="freeze"/>
+                <text x="520" y="325" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">FOCUS</text>
+                <line x1="585" y1="321" x2="810" y2="321" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="325" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">UI/UX &amp; Game Servers</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.1s" fill="freeze"/>
+                <text x="520" y="355" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CORE.LANG</text>
+                <line x1="615" y1="351" x2="810" y2="351" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="355" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Turkish, English</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.2s" fill="freeze"/>
+                <text x="520" y="375" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CORE.FRONTEND</text>
+                <line x1="650" y1="371" x2="810" y2="371" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="375" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">HTML, CSS, React, Tailwind</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>
+                <text x="520" y="395" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CORE.BACKEND</text>
+                <line x1="640" y1="391" x2="810" y2="391" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="395" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">Node.js, Python, Lua</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.4s" fill="freeze"/>
+                <text x="520" y="415" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CORE.DATABASE</text>
+                <line x1="650" y1="411" x2="810" y2="411" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="415" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">MySQL, MongoDB</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.5s" fill="freeze"/>
+                <text x="520" y="435" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">CORE.INFRA</text>
+                <line x1="625" y1="431" x2="810" y2="431" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="435" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">FiveM, Linux, Git</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.7s" fill="freeze"/>
+                <text x="520" y="465" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">GRID.MAIL</text>
+                <line x1="615" y1="461" x2="810" y2="461" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="465" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">sytheron1@gmail.com</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.8s" fill="freeze"/>
+                <text x="520" y="485" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">GRID.STORE</text>
+                <line x1="625" y1="481" x2="810" y2="481" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="485" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">obx.tebex.io</text>
+            </g>
+
+            <g opacity="0">
+                <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.9s" fill="freeze"/>
+                <text x="520" y="505" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#57606a">GRID.GITHUB</text>
+                <line x1="635" y1="501" x2="810" y2="501" stroke="#57606a" stroke-width="1.5" stroke-dasharray="2,6" opacity="0.3">
+                    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+                </line>
+                <text x="820" y="505" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#57606a">github.com/sytheronn</text>
             </g>
         </g>
 
         <!-- Skills Section -->
         <g opacity="0">
-            <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.6s" fill="freeze"/>
-            <text x="520" y="475" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#57606a">TECH STACK</text>
-            
+            <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.2s" fill="freeze"/>
             <!-- Row 1 -->
-            <g class="pill" transform="translate(520, 495)">
+            <g class="pill" transform="translate(520, 560)">
                 <rect width="140" height="32" rx="16"/>
                 <g class="social-icon" transform="translate(10, 8)">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#24292f">
@@ -6578,7 +6661,7 @@
                 <text x="36" y="21" font-family="'Inter', sans-serif" font-size="13" font-weight="500">UI/UX &amp; Frontend</text>
             </g>
             
-            <g class="pill" transform="translate(680, 495)">
+            <g class="pill" transform="translate(680, 560)">
                 <rect width="110" height="32" rx="16"/>
                 <g class="social-icon" transform="translate(10, 8)">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#24292f">
@@ -6588,18 +6671,7 @@
                 <text x="36" y="21" font-family="'Inter', sans-serif" font-size="13" font-weight="500">Python</text>
             </g>
             
-            <!-- Row 2 -->
-            <g class="pill" transform="translate(520, 535)">
-                <rect width="110" height="32" rx="16"/>
-                <g class="social-icon" transform="translate(10, 8)">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#24292f">
-                        <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/>
-                    </svg>
-                </g>
-                <text x="36" y="21" font-family="'Inter', sans-serif" font-size="13" font-weight="500">Node.js</text>
-            </g>
-            
-            <g class="pill" transform="translate(640, 535)">
+            <g class="pill" transform="translate(810, 560)">
                 <rect width="140" height="32" rx="16"/>
                 <g class="social-icon" transform="translate(10, 8)">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#24292f">
@@ -6612,7 +6684,7 @@
 
         <!-- Social Icons (Bottom Right Corner) -->
         <g opacity="0">
-            <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.9s" fill="freeze"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.4s" fill="freeze"/>
             
             <g transform="translate(1020, 566)">
                 <g class="social-icon">
